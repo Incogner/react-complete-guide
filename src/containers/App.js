@@ -6,7 +6,7 @@ import Cockpit from '../components/Cockpit/Cockpit';
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log('[app.js] constructor');
+    console.log('[App.js] constructor');
   }
 
   state = {
@@ -28,13 +28,14 @@ class App extends Component {
     console.log('[App.js] componentDidMount');
   }
 
-  componentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
-  }
-
+  
   shouldComponentUpdate() {
     console.log('[App.js] shouldComponentMount');
     return true;
+  }
+
+  componentDidUpdate() {
+    console.log('[App.js] componentDidUpdate');
   }
 
   nameChangedHandler = (event, id) => {
