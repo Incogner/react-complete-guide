@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Person from './Person/Person';
 
+
 class Persons extends PureComponent {
 
     state = {
@@ -52,7 +53,8 @@ class Persons extends PureComponent {
             name={person.name} 
             age={person.age}
             click={this.props.clicked.bind(this, index)}
-            changed={(event) => {this.props.changed(event, person.id)}} />
+            changed={(event) => {this.props.changed(event, person.id)}} 
+        />
             );
         });
     }
